@@ -25,16 +25,17 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    View.OnLongClickListener btnListener = new View.OnLongClickListener() {
+    View.OnClickListener btnListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            switch(v.getId());
+            switch (v.getId()){
                 case R.id.btn_prev:
-                    flipper.showPrevious();
-                    break;
+                flipper.showPrevious();
+                break;
                 case R.id.btn_next:
                     flipper.showNext();
                     break;
-        }
+            }
+         }
     };
 }
